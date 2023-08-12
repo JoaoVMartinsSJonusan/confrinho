@@ -7,8 +7,6 @@ public class Dolar extends Moeda {
         super(valor);
     }
 
-
-
     @Override
     public void info() {
         System.out.println("Saldo em conta: $" + String.format("%.2f", getValor()));
@@ -20,9 +18,8 @@ public class Dolar extends Moeda {
         return convertReal;
     }
 
-    
     public String toString() {
-        return "Saldo em Dolar: " + getValor() + "";
+        return "Saldo em Dolar: US$" + getValor();
     }
 
     

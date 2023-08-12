@@ -22,7 +22,7 @@ public class Real extends Moeda {
         double convertDolar = 0;
         System.out.println("Deseja converter para [1]EURO ou [2]DOLAR? ");
         int escolha = sc.nextInt();
-        
+        //como explicado no comentario da classe Cofrinho, quando chamado a funcao converter() da classe Real é perguntado ao usuario para qual moeda quer converter
         switch (escolha) {
             case 1:
                 convertDolar = getValor() / 4.91;
@@ -37,7 +37,7 @@ public class Real extends Moeda {
         sc.close();
         return convertDolar;
     }
-
+    
     public String toString() {
         return "Saldo em Reais: R$" + getValor();
     }
