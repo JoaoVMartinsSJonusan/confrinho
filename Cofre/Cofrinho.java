@@ -7,11 +7,12 @@ import java.util.List;
 
 public class Cofrinho {
     //Lista onde as moedas serao adicionadas
-    private List<Moeda> moedas = new ArrayList<>();
+    private List<Moeda> moedas;
 
     private double convertido;
 
     public Cofrinho() {
+        this.moedas = new ArrayList<>();
     }
 
 

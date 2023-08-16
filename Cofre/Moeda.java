@@ -1,13 +1,10 @@
 package Cofre;
 
-public abstract class Moeda extends Cofrinho {
+public abstract class Moeda {
     
     private double valor;
-    //Contrutores usados para usar o super() nas outras classes
-    public Moeda() {
-
-    }
     
+    //Contrutores usados para usar o super() nas outras classes
     public Moeda(double valor) {
         this.valor = valor;
     }
@@ -21,9 +18,8 @@ public abstract class Moeda extends Cofrinho {
     }
 
 
-    public void info() {}
+    public abstract void info();
 
-    public double converter() {
-        return 0.0;
-    }
+    public abstract double converter();
+    
 }

@@ -10,7 +10,6 @@ import Cofre.Dolar;
 import Cofre.Real;
 
 
-
 public class Principal {
     //Função para limpar a tela do terminal
     public static void limpartela() throws IOException, InterruptedException {
@@ -59,6 +58,7 @@ public class Principal {
                 limpartela();
             } while (escolha != 'N');
 
+            cofre.listagemMoedas();
             //Linhas de comando para remoção de valores da lista
             System.out.print("Deseja remover algum valor? [S]/[N] ");
             escolha = sc.next().toUpperCase().charAt(0);
